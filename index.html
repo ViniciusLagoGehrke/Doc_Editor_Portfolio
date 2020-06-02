@@ -5,49 +5,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ricardo Farias</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="/path/to/parallax.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 </head>
 
 <body>
   <header>
-    <nav class="menu">
-      <ul class="container">
-        <li><a href="#About">About</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Contacts">Contacts</a></li>
-      </ul>
-    </nav>
+    <!-->
+    <label id="language-toggle" class="switch-light switch-candy" onclick="">
+      <input type="checkbox">
+      <span>EN</span>
+      <span>ID</span>
+    </label>
+    <-->
+  </header>
 
-	<section class="showcase">
-			<div class="video-container">
-				<video src="https://traversymedia.com/downloads/video.mov" autoplay loop></video>
-			</div>
-			<div class="content">
-				<h1>Ricardo Farias</h1>
-				<h3>Fiction and Documentary Editor</h3>
-				<a href="#About" class="btn">Read More</a>
-			</div>
-		</section>
+  <section class="showcase">
+    <div class="video-container">
+      <video src="https://traversymedia.com/downloads/video.mov" autoplay loop></video>
+    </div>
+    <div class="eng content">
+      <h1>Ricardo Farias</h1>
+      <h3>Fiction and Documentary Editor</h3>
+      <a href="#about" class="btn">Read More</a>
+    </div>
+    <div class="pot content">
+      <h1>Ricardo Farias</h1>
+      <h3>Editor de Ficção e Documentário</h3>
+      <a href="#about" class="btn">Mais Sobre</a>
+    </div>
+  </section>
 
-		<section id="About">
-			<h1>About</h1>
+  <section id="about">
 
+    <label class="switch-light languages switch-candy" onclick="">
+      <input type="checkbox">
+      <span>EN</span>
+      <span>ID</span>
+    </label>
 
+    <h1>About</h1>
 
-			<p>
-				With a graduate course in documentary cinema from FGV with coordination by Eduardo Escorel
-			</p>
+    <p>
+      With a graduate course in documentary cinema from FGV with coordination by Eduardo Escorel
+    </p>
 
-      <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="img/Ricardo_Jasmin.jpg"></div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id fugit iusto aperiam minus, earum nesciunt alias
+      beatae quas reprehenderit. Sapiente, sequi. Veniam laboriosam perspiciatis minus numquam molestiae odit et
+      magni.
+    </p>
 
-		</section>
+  </section>
 
-  <section class="contato container" id="contato">
-    <h2>Contact</h2>
+  <section class="contato container" id="contacts">
+    <h1>Contact</h1>
 
     <div class="grid icons">
       <a target="_blank" href="https://vimeo.com/ricardofarias">
@@ -57,7 +74,7 @@
         <i class="fab fa-linkedin"></i>
       </a>
       <a target="_blank" href="https://www.instagram.com/ricard_farias/">
-        <i class="fab fa-instagram"></i>
+        <i class="fab fa-instagram" fav f3x></i>
       </a>
     </div>
   </section>
