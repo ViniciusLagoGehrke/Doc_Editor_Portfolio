@@ -10,61 +10,98 @@
   <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="/path/to/parallax.js"></script>
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="/language.js"></script>
 </head>
 
 <body>
-  <header>
-    <!-->
-    <label id="language-toggle" class="switch-light switch-candy" onclick="">
-      <input type="checkbox">
-      <span>EN</span>
-      <span>ID</span>
-    </label>
-    <-->
-  </header>
-
   <section class="showcase">
     <div class="video-container">
       <video src="https://traversymedia.com/downloads/video.mov" autoplay loop></video>
     </div>
-    <div class="eng content">
+    <div class="content">
       <h1>Ricardo Farias</h1>
-      <h3>Fiction and Documentary Editor</h3>
-      <a href="#about" class="btn">Read More</a>
-    </div>
-    <div class="pot content">
-      <h1>Ricardo Farias</h1>
-      <h3>Editor de Ficção e Documentário</h3>
-      <a href="#about" class="btn">Mais Sobre</a>
+      <h3 id="subtitulo">Fiction and Documentary Editor</h3>
+      <a id="more" href="#about" class="btn">Read More</a>
     </div>
   </section>
 
   <section id="about">
+  <!-- links para site bilingue -->    
+    <a class="lang-button" href="#eng" data-reload>En</a>
+    <a class="lang-button" href="#pt" data-reload>Pt</a>
 
-    <label class="switch-light languages switch-candy" onclick="">
-      <input type="checkbox">
-      <span>EN</span>
-      <span>ID</span>
-    </label>
-
-    <h1>About</h1>
-
-    <p>
-      With a graduate course in documentary cinema from FGV with coordination by Eduardo Escorel
-    </p>
-
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id fugit iusto aperiam minus, earum nesciunt alias
-      beatae quas reprehenderit. Sapiente, sequi. Veniam laboriosam perspiciatis minus numquam molestiae odit et
-      magni.
+    <p id="info">
+      Natural from Curitiba and raised in São Paulo Ricardo has been working in many projects, from institutional films to Fiction, Short and Long but set foot on his cinematic passion: documentaries. Has a graduate course in documentary cinema from FGV with coordination by Eduardo Escorel, lots of experience and a lovely daugther to make his eyes shine every day.
     </p>
 
   </section>
 
-  <section class="contato container" id="contacts">
-    <h1>Contact</h1>
+  <section class="portifolio container" id="portifolio">
+    <h2>Projetos</h2>
+
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portifolio" src="https://i.vimeocdn.com/video/855141379" alt="EX-PAJÉ">
+      </figure>
+      <div class="card-text">
+        <h3>EX-PAJÉ</h3>
+        <p class="card__body">Luiz Bolognesi Award in Berlin Festival</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portifolio" src="https://i.vimeocdn.com/video/690061912" alt="Life After Her">
+      </figure>
+      <div class="card-text">
+        <h3>Life After Her</h3>
+        <p class="card__body">Cannes Festival - Winner NYC Indie Film Awards</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portifolio" src="https://i.vimeocdn.com/video/835191860" alt="Velhos">
+      </figure>
+      <div class="card-text">
+        <h3>Velhos</h3>
+        <p class="card__body">FIESP/SESI Best Documentary Series Award</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portifolio" src="https://i.vimeocdn.com/video/835232038" alt="Mulheres Olímpicas">
+      </figure>
+      <div class="card-text">
+        <h3>Mulheres Olímpicas</h3>
+        <p class="card__body">Directed by Laís Bodanzky </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portifolio" src="https://i.vimeocdn.com/video/840594465" alt="Guerras do Brasil.doc">
+      </figure>
+      <div class="card-text">
+        <h3>Guerras do Brasil.doc</h3>
+        <p class="card__body">Luiz Bolognesi Best Script Award</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portifolio" src="https://i.vimeocdn.com/video/854622616" alt="A Comédia Divina">
+      </figure>
+      <div class="card-text">
+        <h3>A Comédia Divina</h3>
+        <p class="card__body">Luiz Bolognesi Best Script Award</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="contato--container" id="contacts">
 
     <div class="grid icons">
       <a target="_blank" href="https://vimeo.com/ricardofarias">
@@ -78,7 +115,7 @@
       </a>
     </div>
   </section>
-
+  
 </body>
 
 </html>

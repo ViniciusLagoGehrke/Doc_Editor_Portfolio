@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 :root {
-	--primary-color: #3a4052;
+  --primary-color: #3A4052;
+  --secondary-color: #FFFFFA;
+  --third-color: #1B9AAA;
+  --fourth-color: #C89933;
+  --fifth-color: #99621E;
 }
 
 * {
@@ -11,7 +15,7 @@
 }
 
 html {
-  font: 1em/1.5 'Open Sans', sans-serif;
+  font: 1em/1.6 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility;
@@ -19,16 +23,8 @@ html {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	line-height: 1.5;
+	line-height: 1.5em;
   font-size: 1.3em;
-}
-
-.eng{
-	display: show;
-}
-
-.pot{
-	display: none;
 }
 
 a {
@@ -37,86 +33,12 @@ a {
 }
 
 h1 {
+  color: var(--secondary-color);
 	font-weight: 300;
-	font-size: 60px;
-	line-height: 1.2;
-	margin-bottom: 15px;
+	font-size: 3.75rem;
+	line-height: 1.2rem;
+	margin-bottom: 1rem;
 }
-
-.languages{
-	display: flex;
-	position: flex end;
-	z-index: 5;
-}
-/* Hide by default
-*/
-.languages span{
-	display: none;
-}
-/* We can't test for a specific feature,
-* so we only target browsers with support for media queries.
-*/
-@media only screen {
-	/* Checkbox switch
-	*/
-	.switch-light {
-	  display: block;
-	  min-height: 1.875em;
-	  /* Outline the toggles when the inputs are focused
-	*/
-	  position: relative;
-	  overflow: visible;
-	  padding: 0;
-	  margin-left: 6.25em;
-	  /* Position the label over all the elements, except the slide-button (<a>)
-	* Clicking anywhere on the label will change the switch-state
-	*/
-	  /* Don't hide the input from screen-readers and keyboard access
-	*/ }
-	.switch-light * {
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box; }
-	.switch-light a {
-		display: block;
-		-webkit-transition: all 0.2s ease-out;
-		-moz-transition: all 0.2s ease-out;
-		transition: all 0.2s ease-out; }
-	.switch-light label, .switch-light > span {
-		line-height: 1.875em;
-		vertical-align: middle; }
-	.switch-light input:focus ~ a, .switch-light input:focus + label {
-		outline: 1px dotted #888; }
-	.switch-light label {
-		position: relative;
-		z-index: 3;
-		display: block;
-		width: 100%; }
-	.switch-light input {
-		position: absolute;
-		opacity: 0;
-		z-index: 5; }
-	.switch-light input:checked ~ a {
-		right: 0%; }
-	.switch-light > span {
-		position: absolute;
-		left: -6.25em;
-		width: 100%;
-		margin: 0;
-		padding-right: 6.25em;
-		text-align: left;
-		z-index: 5;
-        display: block;}
-	.switch-light a {
-		position: absolute;
-		right: 50%;
-		top: 0;
-		z-index: 4;
-		display: block;
-		width: 50%;
-		height: 100%;
-		padding: 0; }
-	}
 
 .showcase {
 	height: 100vh;
@@ -125,7 +47,13 @@ h1 {
 	justify-content: center;
 	text-align: center;
 	color: #fff;
-	padding: 0 20px;
+	padding: 0 1.25rem;
+  position: relative;
+}
+
+.showcase h3{
+  color: var(--secondary-color);
+  line-height: 3rem;
 }
 
 .video-container {
@@ -166,12 +94,12 @@ h1 {
 
 .btn {
 	display: inline-block;
-	padding: 10px 30px;
+	padding: 0.625rem 1.875rem;
 	background: var(--primary-color);
 	color: #fff;
 	border-radius: 5px;
 	border: solid #fff 1px;
-	margin-top: 25px;
+	margin-top: 1.5rem;
 	opacity: 0.7;
 }
 
@@ -179,23 +107,39 @@ h1 {
 	transform: scale(0.98);
 }
 
-#contacts,
+/*language selectors*/
+
+.lang-button{
+  color: var(--secondary-color);
+  position:flex-end;
+  z-index:5;
+}
+
+.eng{
+	display: show;
+}
+
+.pt{
+	display: none;
+}
+
+/*About sector*/
+
 #about {
-	padding: 100px;
-	text-align: center;
+  background-color: var(--secondary-color);
+	text-align: left;
+  height: 80vh;
 }
 
 #about p {
 	display: block;
-	font-size: 1.2rem;
-	max-width: 600px;
-	margin: auto;
-	justify-self: center;
-}
-
-#about h1 {
-	margin: 30px 0;
-	color: var(--primary-color);
+  font-size: 1.6rem;
+	line-height: 1.5;
+  max-width: 75%;
+  margin-left: 3rem;
+	padding-top: 3rem;
+	justify-self: left;
+  width: 60%;
 }
 
 .parallax {
@@ -203,8 +147,67 @@ h1 {
     background: transparent;
 }
 
-#contacts h1{
-	color: var(--primary-color);
+/*Portifolio Section*/
+
+.portifolio{
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 8em;
+  position: relative;  
+  justify-content: space-evenly;
+}
+
+.portifolio h2{
+  position: absolute;
+  left: 2em;
+  top: 2.5em;
+}
+
+.card{
+  position: relative;
+  margin: 0.5em;
+  border: orange solid 1px;
+  display: block;
+  height: 400px;
+  width: 450px;
+}
+
+.img-portifolio{
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  heigth: auto;
+  transition: opacity ease-out 250ms;
+}
+
+.card-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--secondary-color);
+  opacity: 0;
+  transition: opacity ease-out 250ms;
+}
+
+.card:hover .card-text{
+  opacity: 1;
+}
+
+.card-text h3{
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 0;
+}
+
+/*Contacts Section*/
+
+.contato--container{
+  padding: 1.5rem 1.5rem 1rem;
+  position: relative;
+  background-color: var(--primary-color);
 }
 
 #contacts .grid{
@@ -216,6 +219,6 @@ h1 {
 }
 
 #contacts a {
-	color: var(--primary-color);
+	color: var(--secondary-color);
 	font-size: 3rem;
 }
