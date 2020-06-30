@@ -132,31 +132,33 @@ h1 {
   background-color: var(--secondary-color);
   display: flex;
   flex-flow: row wrap;
-	text-align: left;
+  justify-content: center;
+  max-width: 500px;
+  padding: 1rem 0 2rem 0;
 }
 
 .about-card {
+  border: solid black 1px;
+  align-items:center;
   display: flex;
   flex-flow: row no-wrap;
-  align-items:center;
+  padding: 1rem;
 }
 
 #about p {
   display: block;
   font-size: 1.2rem;
 	line-height: 1.4;
-  margin-left: 1rem;
-	padding: 1rem 0;
-	justify-self: left;
   text-align:center;
   width: 90%;
 }
 
 #about img{
   border-radius: 50%;
-  height: 10rem;
-  width: auto;
-  margin: 1rem;
+  height: auto;
+  margin: 0.5rem;
+  object-fit: cover;
+  width: 40%;
 }
 
 .parallax {
@@ -181,39 +183,53 @@ h1 {
 
 .card{
   position: relative;
-  margin: 0.5em;
-  border: orange solid 1px;
+  margin: 2em;
   display: block;
-  height: 400px;
-  width: 450px;
+  height: 90vw;
+  width: 80vw;
+}
+/*
+.card:nth-child(odd) {
+  position
+*/
+
+.card-front{
+  background-color: var(--fourth-color);
+  height: 60%;
+  position: relative;
+  width: 100%;
 }
 
 .img-portifolio{
   display: block;
+  height: auto;
+  max-width: 90%;
   object-fit: cover;
-  max-width: 100%;
-  heigth: auto;
+  position: absolute;
+  top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
   transition: opacity ease-out 250ms;
 }
 
 .card-text{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 65%;
+  left: 10%;
   color: var(--secondary-color);
-  opacity: 0;
-  transition: opacity ease-out 250ms;
-}
-
-.card:hover .card-text{
-  opacity: 1;
 }
 
 .card-text h3{
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.card-text p{
   font-size: 1rem;
   color: var(--secondary-color);
-  margin-bottom: 0;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  text-align: right;
 }
 
 /*Contacts Section*/
@@ -235,7 +251,7 @@ h1 {
 #contacts a {
   display: block;
 	color: var(--secondary-color);
-	font-size: 3rem;
+	font-size: 2.5rem;
 }
 
 #contacts a:hover i,
