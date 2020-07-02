@@ -40,7 +40,7 @@ h1 {
 	line-height: 1;
 }
 
-/* showcase */
+/*------------------------showcase------------------------*/
 
 .showcase {
 	height: 100vh;
@@ -125,24 +125,23 @@ h1 {
 	display: none;
 }
 
-/*About sector*/
+/*------------------------About sector------------------------*/
 
 #about {
-  align-items: start;
+  align-items: center;
   background-color: var(--secondary-color);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  max-width: 500px;
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0;
 }
 
 .about-card {
-  border: solid black 1px;
   align-items:center;
   display: flex;
-  flex-flow: row no-wrap;
-  padding: 1rem;
+  max-width: 700px;
+  padding: 0.2rem;
+  width: 90%;
 }
 
 #about p {
@@ -153,8 +152,16 @@ h1 {
   width: 90%;
 }
 
-#about img{
+.img1{
   border-radius: 50%;
+  height: auto;
+  margin: 0.5rem;
+  object-fit: cover;
+  width: 40%;
+}
+
+.img2{
+  clip-path: polygon(50% 100%, 0% 30%, 20% 12%, 80% 12%, 100% 30%);
   height: auto;
   margin: 0.5rem;
   object-fit: cover;
@@ -166,10 +173,12 @@ h1 {
     background: transparent;
 }
 
-/*Portifolio Section*/
+/*------------------------Portifolio Section------------------------*/
 
 .portifolio{
   background-color: var(--primary-color);
+  display:flex;
+  flex-direction: column;
   padding: 6em 0;
   position: relative;
 }
@@ -182,19 +191,23 @@ h1 {
 }
 
 .card{
-  position: relative;
-  margin: 2em;
   display: block;
-  height: 90vw;
-  width: 80vw;
+  height: 95vh;
+  margin: 2em;
+  width: 70vw;
 }
-/*
-.card:nth-child(odd) {
-  position
-*/
+
+.portifolio div:nth-of-type(odd){
+  align-self:flex-end;
+}
+
+.portifolio div:nth-of-type(even){
+  align-self:flex-start;
+}
 
 .card-front{
   background-color: var(--fourth-color);
+  border-radius: 2px;
   height: 60%;
   position: relative;
   width: 100%;
@@ -202,7 +215,7 @@ h1 {
 
 .img-portifolio{
   display: block;
-  height: auto;
+  height: 90%;
   max-width: 90%;
   object-fit: cover;
   position: absolute;
@@ -210,29 +223,36 @@ h1 {
 	left: 50%;
 	transform: translate(-50%, -50%);
   transition: opacity ease-out 250ms;
+  width: auto;
 }
 
 .card-text{
-  position: absolute;
-  top: 65%;
-  left: 10%;
   color: var(--secondary-color);
+  display: block;
+  position: relative;
+  width: 100%;
 }
 
 .card-text h3{
-  font-size: 1.2rem;
   color: var(--secondary-color);
+  font-size: 1.3rem;
+  left: 0.5rem;
+  position: absolute;
+  top: 1rem;
 }
 
 .card-text p{
-  font-size: 1rem;
   color: var(--secondary-color);
+  font-size: 1rem;
   margin-top: 1rem;
   padding: 0.8rem;
+  position: absolute;
+  right: 0.2rem;
   text-align: right;
+  top: 2rem;
 }
 
-/*Contacts Section*/
+/*------------------------Contacts Section------------------------*/
 
 .contato--container{
   padding: 1.5rem 1.5rem 3rem;
