@@ -1,253 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ricardo Farias</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="mediaQuery.css">
+  <link rel="stylesheet" href="estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="/path/to/parallax.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav class="menu">
-      <ul class="container">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#portfolio">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-    <div class="titulo">
-      <h1 class="site-title">Ricardo Farias</h1>
-      <h2 class="site-subtitle">Montador / Ficção e documentário</h2>
-      <h2 class="site-subtitle">Pós-graduação em Cinema Documentário FGV Coord Eduardo Escorel</h2>
+  <section class="showcase">
+    <div class="video-container">
+      <video src="https://traversymedia.com/downloads/video.mov" autoplay loop></video>
     </div>
-  </header>
-  <section class="sobre container" id="sobre">
-    <h2>Sobre</h2>
+    <div class="content">
+      <h1>Ricardo Farias</h1>
+      <h3 id="subtitulo">Fiction and Documentary Editor</h3>
+      <a id="more" href="#about" class="btn">Read More</a>
+    </div>
+  </section>
 
-    <figure class="avatar">
-      <img src="https://i.vimeocdn.com/portrait/38507269_300x300.webp" alt="Ricardo Farias">
-    </figure>
+  <section id="about">
+  <!-- links para site bilingue  
+    <a class="lang-button" href="#eng" data-reload>En</a>
+    <a class="lang-button" href="#pt" data-reload>Pt</a>
+  -->  
+    <div class="about-card">
+      <p id="info">Natural from Curitiba and raised in São Paulo</p>
+      <img class="img1" src="img/Ricardo.jpeg" alt="Doc Editor">
+    </div>
+    <div class="about-card">
+      <p>With many projects from institutional films to Fiction, Short and Long. Ricardo has set foot on his cinematic passion, Documentaries. Has a graduate course in documentary cinema from FGV with coordination by Eduardo Escorel.</P>
+    </div>
+    <div class="about-card">
+      <img class="img2" src="img/Ricardo_Jasmin.jpg" alt="RicardoJasmin">
+      <p>Ricardo has lots of experience and a lovely daugther to make his eyes shine every day.</P>
+    </div>    
+  </section>
 
-    <ul>
-      <li>EX-PAJÉ Fic/Doc
-        Dir Luiz Bolognesi
-        Prêmio júri de documentários Festival de Berlim 2018
-        Indicado a Melhor Montagem GP do Cinema Brasileiro 2019
-        Melhor Documentário GP do Cinema Brasileiro 2019
-        Prêmio da Crítica É Tudo Verdade 2018
-        Melhor Roteiro Documentário ABRA 2019</li>
-      <li>MULHERES OLÍMPICAS Doc
-        Dir Laís Bodanzky
-        ESPN</li>
-      <li>SANTOS DE TODOS OS GOLS Doc
-        Melhor Filme CINEfoot 2019
-        Dir Lina Chamie
-      </li>
-      <li>LIFE AFTER HER Ficção
-        Dir Gui Festa
-        Cannes Festival Short Film Corner 2017
-        Prêmio NYC Indie Awards 2017
-      </li>
-      <li>O ESTACIONAMENTO Ficção
-        Dir William Biagioli
-        Melhor Curta Festival do Rio 2016
-        Cinémathèque Francaise
-      </li>
-      <li>AMIGOS Ficção
-        Dir Lina Chamie
-        Melhor Montagem Gramado 2013
-        Montagem Karen Harley
-        Assist montagem Ricardo Farias
-      </li>
-      <li>SÉRIE VELHOS Doc
-        Melhor Série Documental FIESP/SESI 2018
-        Dir Giuliano Cedroni/Eduardo Rajabally
-        HBO
-      </li>
-      <li>A COMÉDIA DIVINA Ficção
-        Dir Toni Venturi
-        GloboPlay
-        Festival do Rio 2017
-      </li>
-      <li>SÉRIE GUERRAS DO BRASIL.DOC
-        Dir Luiz Bolognesi
-        Melhor Roteiro Série ABRA 2019
-        NETFLIX
-      </li>
-      <li>LILIAN M Ficção
-        Dir Carlos Reinchenbach
-        Montagem adicional 2010
-      </li>
-      <li>A ÚLTIMA FLORESTA Ficção
-        Dir Luiz Bolognesi
-      </li>
-      <li>AMAZÔNIA 3D Ficção
-        Dir Thierry Ragobert
-        Montagem Nadine Verdier
-        Montagem diálogos Ricardo Farias
-      </li>
-      <li>Telefilme ONDE ESTÁ VOCÊ?
-        Johnny Araújo
-      </li>
-      <li>Telefilme O AMOR CUSTA CARO
-        André Ristum
-      </li>
-      <li>SÃO SILVESTRE Doc
-        Dir Lina Chamie
-        Melhor Documentário APCA 2014
-        Mostra Internacional SP 2014
-        Melhor Som CineMúsica 2014
-        Montagem Umberto Martins
-        Colaboração Edição de Som
-      </li>
-      <li>CARTA PARA ALÉM DOS MUROS Doc
-        Dir André Canto
-        NETFLIX
-      </li>
-      <li>DORINA OLHAR PARA O MUNDO Doc
-        Dir Lina Chamie
-        DezenoveFilmes/HBO
-      </li>
-      <li>SANTOS 100 ANOS DE FUTEBOL ARTE Doc
-        Dir Lina Chamie
-        É Tudo Verdade 2012
-      </li>
-      <li>SÉRIE EDUCAÇÃO.DOC
-        Dir Luiz Bolognesi
-        CoDir Laís Bodanzky
-        GloboNews/Fantástico
-      </li>
-      <li>DIZER E NÃO PEDIR SEGREDO Doc
-        Dir Evaldo Mocarzel
-        Mix Brasil 2013
-      </li>
-      <li>AQUALOUCOS Doc
-        Dir Victor Ribeiro
-        Paris Filmes
-      </li>
-      <li>SÉRIE JUVENTUDE CONECTADA Doc
-        Dir Luiz Bolognesi
-        Prod Laís Bodanszky
-      </li>
-      <li>SÉRIE FUNK.DOC
-        Dir Luiz Bolognesi
-        HBO
-      </li>
-      <li>ÂNCORA DO MARUJO Doc
-        Dir Victor Nascimento
-        InEdit 2014
-      </li>
-      <li>HOMEM CAVALO SOCIEDADE ANÔNIMA Doc
-        Dir Evaldo Mocarzel
-      </li>
-      <li>FESTA DE SEPARAÇÃO Doc
-        Dir Evaldo Mocarzel
-      </li>
-      <li>LIBERTADOS Doc
-        Dir Ricardo Aidar
-      </li>
-      <li>SÃO MIGUEL DO GOSTOSO Doc
-        Dir/Mont Eugenio Puppo
-        Assis Mont Ricardo Farias
-        É Tudo Verdade 2011
-      </li>
-      <li>PESCADO Curta Doc
-        Dir/Mont Ricardo Farias
-        TV Cultura
-      </li>
-      <li>DOCSP
-        RoughCutLab Karen Harley 2016
-      </li>
-      <li>A FILM ABOUT BUTTS
-        Toronto Artists Collective 2007
-      </li>
-      <li>FESTIVAL HOTDOCS TORONTO 2006
-        Volunteer
-      </li>
-      <li>FESTIVAL DE CINEMA CURITIBA 2002
-        Assessor de Imprensa
-      </li>
-    </ul>
+  <section class="portifolio container" id="portifolio">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portifolio" src="https://i.vimeocdn.com/video/855141379" alt="EX-PAJÉ">
+      </figure>
+      <div class="card-text">
+        <h3>EX-PAJÉ</h3>
+        <p class="card__body">Luiz Bolognesi Award in Berlin Festival</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portifolio" src="https://i.vimeocdn.com/video/690061912" alt="Life After Her">
+      </figure>
+      <div class="card-text">
+        <h3>Life After Her</h3>
+        <p class="card__body">Cannes Festival - Winner NYC Indie Film Awards</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portifolio" src="https://i.vimeocdn.com/video/835191860" alt="Velhos">
+      </figure>
+      <div class="card-text">
+        <h3>Velhos</h3>
+        <p class="card__body">FIESP/SESI Best Documentary Series Award</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portifolio" src="https://i.vimeocdn.com/video/835232038" alt="Mulheres Olímpicas">
+      </figure>
+      <div class="card-text">
+        <h3>Mulheres Olímpicas</h3>
+        <p class="card__body">Directed by Laís Bodanzky </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portifolio" src="https://i.vimeocdn.com/video/840594465" alt="Guerras do Brasil.doc">
+      </figure>
+      <div class="card-text">
+        <h3>Guerras do Brasil.doc</h3>
+        <p class="card__body">Luiz Bolognesi Best Script Award</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <figure class="card-front">
+        <img class="img-portifolio" src="https://i.vimeocdn.com/video/854622616" alt="A Comédia Divina">
+      </figure>
+      <div class="card-text">
+        <h3>A Comédia Divina</h3>
+        <p class="card__body">Luiz Bolognesi Best Script Award</p>
+      </div>
+    </div>
 
   </section>
-  <section class="portfolio container" id="portfolio">
-    <h2>Projetos</h2>
 
-    <div class="grid">
-
-      <div class="flip-card">
-        <div class="card">
-          <figure class="card-front">
-            <img class="img-portfolio" src="https://i.vimeocdn.com/video/855141379" alt="EX-PAJÉ">
-          </figure>
-          <div class="card-back">
-            <h3>EX-PAJÉ</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="flip-card">
-        <div class="card">
-          <figure class="card-front">
-            <img class="img-portfolio" src="https://i.vimeocdn.com/video/690061912" alt="Life After Her">
-          </figure>
-          <div class="card-back">
-            <h3>Life After Her</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="flip-card">
-        <div class="card">
-          <figure class="card-front">
-            <img class="img-portfolio" src="https://i.vimeocdn.com/video/835191860" alt="Velhos">
-          </figure>
-          <div class="card-back">
-            <h3>Velhos</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="flip-card">
-        <div class="card">
-          <figure class="card-front">
-            <img class="img-portfolio" src="https://i.vimeocdn.com/video/835232038" alt="Mulheres Olímpicas">
-          </figure>
-          <div class="card-back">
-            <h3>Mulheres Olímpicas</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="flip-card">
-        <div class="card">
-          <figure class="card-front">
-            <img class="img-portfolio" src="https://i.vimeocdn.com/video/840594465" alt="Guerras do Brasil.doc">
-          </figure>
-          <div class="card-back">
-            <h3>Guerras do Brasil.doc</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="flip-card">
-        <div class="card">
-          <figure class="card-front">
-            <img class="img-portfolio" src="https://i.vimeocdn.com/video/854622616" alt="A Comédia Divina">
-          </figure>
-          <div class="card-back">
-            <h3>A Comédia Divina</h3>
-          </div>
-        </div>
-      </div>
-
-  </section>
-  <section class="contato container" id="contato">
-    <h2>Contato</h2>
+  <section class="contato--container" id="contacts">
 
     <div class="grid icons">
       <a target="_blank" href="https://vimeo.com/ricardofarias">
@@ -257,10 +118,14 @@
         <i class="fab fa-linkedin"></i>
       </a>
       <a target="_blank" href="https://www.instagram.com/ricard_farias/">
-        <i class="fab fa-instagram"></i>
+        <i class="fab fa-instagram" fav f3x></i>
       </a>
     </div>
   </section>
+  
+  <script src="/language.js"></script>
+  <script src="/slideIn.js"></script>
+
 </body>
 
 </html>

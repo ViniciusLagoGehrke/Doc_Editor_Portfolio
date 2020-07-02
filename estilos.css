@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+  --primary-color: #3A4052;
+  --secondary-color: #FFFFFA;
+  --third-color: #1B9AAA;
+  --fourth-color: #C89933;
+  --fifth-color: #99621E;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  scroll-behavior: smooth;
+}
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+h1 {
+  color: var(--secondary-color);
+	font-weight: 300;
+	font-size: 3rem;
+	line-height: 1;
+}
+
+/*------------------------showcase------------------------*/
+
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 1.25rem;
+  position: relative;
+}
+
+.showcase h3{
+  color: var(--secondary-color);
+  line-height: 3rem;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--primary-color) url('./https://traversymedia.com/downloads/cover.jpg') no-repeat center
+		center/cover;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+
+.content {
+	z-index: 2;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.625rem 1.875rem;
+	background: var(--primary-color);
+	color: #fff;
+	border-radius: 5px;
+	border: solid #fff 1px;
+	margin-top: 1.5rem;
+	opacity: 0.7;
+}
+
+.btn:hover {
+	transform: scale(0.98);
+}
+
+/*language selectors*/
+
+.lang-button{
+  color: var(--secondary-color);
+  position:flex-end;
+  z-index:5;
+}
+
+.eng{
+	display: show;
+}
+
+.pt{
+	display: none;
+}
+
+/*------------------------About sector------------------------*/
+
+#about {
+  align-items: center;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.about-card {
+  align-items:center;
+  display: flex;
+  max-width: 700px;
+  padding: 0.2rem;
+  width: 90%;
+}
+
+#about p {
+  display: block;
+  font-size: 1.2rem;
+	line-height: 1.4;
+  text-align:center;
+  width: 90%;
+}
+
+.img1{
+  border-radius: 50%;
+  height: auto;
+  margin: 0.5rem;
+  object-fit: cover;
+  width: 40%;
+}
+
+.img2{
+  clip-path: polygon(50% 100%, 0% 30%, 20% 12%, 80% 12%, 100% 30%);
+  height: auto;
+  margin: 0.5rem;
+  object-fit: cover;
+  width: 40%;
+}
+
+.parallax {
+    min-height: 400px;
+    background: transparent;
+}
+
+/*------------------------Portifolio Section------------------------*/
+
+.portifolio{
+  background-color: var(--primary-color);
+  display:flex;
+  flex-direction: column;
+  padding: 6em 0;
+  position: relative;
+}
+
+.portifolio h2{
+  color: var(--secondary-color);
+  position: absolute;
+  left: 2em;
+  top: 2em;
+}
+
+.card{
+  display: block;
+  height: 95vh;
+  margin: 2em;
+  width: 70vw;
+}
+
+.portifolio div:nth-of-type(odd){
+  align-self:flex-end;
+}
+
+.portifolio div:nth-of-type(even){
+  align-self:flex-start;
+}
+
+.card-front{
+  background-color: var(--fourth-color);
+  border-radius: 2px;
+  height: 60%;
+  position: relative;
+  width: 100%;
+}
+
+.img-portifolio{
+  display: block;
+  height: 90%;
+  max-width: 90%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  transition: opacity ease-out 250ms;
+  width: auto;
+}
+
+.card-text{
+  color: var(--secondary-color);
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.card-text h3{
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  left: 0.5rem;
+  position: absolute;
+  top: 1rem;
+}
+
+.card-text p{
+  color: var(--secondary-color);
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  position: absolute;
+  right: 0.2rem;
+  text-align: right;
+  top: 2rem;
+}
+
+/*------------------------Contacts Section------------------------*/
+
+.contato--container{
+  padding: 1.5rem 1.5rem 3rem;
+  position: relative;
+  background-color: var(--primary-color);
+}
+
+#contacts .grid{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	position: relative;
+	width: 100%;
+}
+
+#contacts a {
+  display: block;
+	color: var(--secondary-color);
+	font-size: 2.5rem;
+}
+
+#contacts a:hover i,
+#contacts a:focus i{
+	text-shadow: 0 0 5px var(--fourth-color);
+}
+
+/* Slide in as scroll down */
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
