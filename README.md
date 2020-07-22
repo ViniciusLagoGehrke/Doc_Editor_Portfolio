@@ -1,7 +1,6 @@
 # Portfolio
 
-![Main page on Desktop View]
-(./DesktopView.png)
+![Main page on Desktop View](./DesktopView.png)
 
 Personal projects, jobs and interest
 
