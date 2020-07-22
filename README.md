@@ -2,6 +2,4 @@
 
 ![Main page on Desktop View](./DesktopView.png)
 
-Personal projects, jobs and interest
-
-HTML and CSS Website
+My first professional project using mainly CSS and HTML with paralax effect and Hero background video and some JS.
